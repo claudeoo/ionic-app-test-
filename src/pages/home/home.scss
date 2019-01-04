@@ -1,3 +1,27 @@
 page-home {
 
+.tout{
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(143, 1, 1)); 
+}
+.titre{
+    font-family: 'Jolly Lodger', cursive;
+    color:red;
+    text-align:center;
+    font-size:80px;
+    text-shadow: 3px 1px 2px rgb(0, 0, 0);
+}
+.slid{
+    border:2px solid black;
+    height: 320px;
+    border-radius: 30px;
+    background-color: rgb(207, 6, 6);
+    
+}
+
+.nav{
+    background-color: rgb(192, 18, 18);   
+}
+
+
+
 }

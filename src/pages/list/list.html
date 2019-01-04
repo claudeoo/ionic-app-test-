@@ -3,21 +3,51 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>List</ion-title>
+    <ion-title class="nav">List De Film</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+<ion-content class="tout">
+
+    <!-- zone invisible -->
+
+    <div *ngIf="selectedItem" padding>
+      <p class="phrasecacher">  vous voulez regarder <b>{{selectedItem.title}} ?</b> </p> 
+        <button color="danger" ion-button round outline (click)="GoToDetail()"> Voir plus</button>
+        <button color="danger" ion-button round outline (click)="DeleteFilm()">
+            <ion-icon ios="ios-trash" md="md-trash"></ion-icon>
+        </button>
+        <button color="danger" ion-button round outline (click)="GoToRegister()">
+            <ion-icon ios="ios-cog" md="md-cog"></ion-icon>
+        </button>      
+      </div>
+      <!-- zone invisible -->
+
+     
+      <ion-card class="cardtxt">
+      
+        <ion-card-content class="cardb" >
+          Cliquez surun film pour en savoir plus
+          <button color="danger" ion-button round (click)="GoToRegister()"> nouveau film</button>
+        </ion-card-content>
+      
+      </ion-card>
+
+  <ion-list >
+    <ion-item-sliding #item >
+      <ion-item *ngFor="let item of items">
+    <button class="btn" ion-item  (click)="itemTapped($event, item)">
       <ion-icon [name]="item.icon" item-start></ion-icon>
       {{item.title}}
       <div class="item-note" item-end>
         {{item.note}}
       </div>
     </button>
+
+  </ion-item>
+  </ion-item-sliding>
   </ion-list>
-  <div *ngIf="selectedItem" padding>
-    You navigated here from <b>{{selectedItem.title}}</b>
-  </div>
+
+
+  
 </ion-content>

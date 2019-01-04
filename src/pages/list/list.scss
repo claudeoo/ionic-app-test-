@@ -1,3 +1,36 @@
 page-list {
+.tout{
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(143, 1, 1));
+}
 
+.nav{
+    background-color: rgb(192, 18, 18); 
+    font-family: 'Jolly Lodger', cursive;
+    font-size: 50px;
+}
+
+.btn{
+    font-family: 'Jolly Lodger', cursive;
+    color:black;
+    background-image: linear-gradient(to bottom right, rgb(144, 46, 46), rgb(143, 1, 1));
+
+}
+.phrasecacher{
+    font-family: 'Jolly Lodger', cursive;
+    color:red;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 5px 1px 2px rgb(0, 0, 0);
+}
+
+.cardtxt{
+    color:black;
+    background-image: linear-gradient(to bottom right, rgb(240, 35, 35), rgb(143, 1, 1));
+    border:1px solid grey;
+    border-radius:20px;
+    font-family: 'Jolly Lodger', cursive;
+}
+.cardb{
+    font-size:14px;
+}
 }

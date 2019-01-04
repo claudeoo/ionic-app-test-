@@ -1,0 +1,38 @@
+page-detail-film {
+
+    .tout{
+        background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(143, 1, 1)); 
+    }
+
+    h2{
+        color:orange;
+        font-family: 'Jolly Lodger', cursive;
+        text-align: center;
+        font-size:60px;
+    }
+
+    p{
+        color:orange;
+        font-family: 'Jolly Lodger', cursive;
+        font-size:20px;
+    }
+
+    .headr{
+        font-family: 'Jolly Lodger', cursive;
+        background-color: rgb(226, 145, 39);
+    }
+    .headr p {
+        font-size: 30px;
+    }
+    .carctn{
+        font-family: 'Jolly Lodger', cursive;
+        background-color: rgb(211, 35, 11);
+    }
+    hr{
+        border: 2px solid rgb(226, 145, 39);
+        border-radius:60px;
+    }
+    .nav{
+        background-color: rgb(211, 18, 11);
+    }
+}
